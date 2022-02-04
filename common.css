@@ -1,0 +1,30 @@
+.fw-b{
+    font-weight: bold;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mb-4{
+    margin-bottom: 4px;
+}
+.caption-small{
+    font-size: 15px;
+}
+.caption-big{
+    font-size: 54px;
+}
+.caption-medium{
+    font-size: 50px;
+}
+.as-c{
+    align-self: center;
+}

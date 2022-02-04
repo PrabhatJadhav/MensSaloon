@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+* {
+  display: flex;
+  font-family: "Outfit", sans-serif;
+}
+.page {
+  width: 100vw;
+  flex-direction: column;
+}
+.container-1 {
+  width: 100%;
+  height: 630px;
+  flex-direction: column;
+}
+.navbar {
+  width: 100%;
+  height: 100px;
+  flex-direction: row;
+  background-color: black;
+}
+.salon-logo {
+  align-items: center;
+  margin-left: 40px;
+}
+.salon-logo img{
+  width:100px;
+  height:60px;
+}
+/* .anim-navbar{
+  animation-name: anim-navbar;
+  animation-timing-function: ease-in-out;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+} */
+.nav-right {
+  width: 100%;
+  padding: 15px 30px;
+  justify-content: flex-end;
+  align-items: center;
+  color: #c49b63;
+}
+.nav-items {
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.nav-items a{
+  text-decoration: none;
+  color: #c49b63;
+}
+.nav-items a:hover{
+  transition: 0.4s;
+  color: #c5c5c5;
+}
+.box-1 {
+  height: 530px;
+  background: url(./Images/bg-box-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #c49b63;
+  flex-direction: column;
+  align-items: center;
+}
+.book-btn {
+  height: 50px;
+  width: 130px;
+  justify-content: center;
+  font-size: medium;
+  font-weight: bold;
+  padding: 12px 6px 1px 6px;
+  border: 1px solid white;
+  background: transparent;
+  color: #c49b63;
+}
+.book-btn:hover {
+  background-color: black;
+  color: white;
+  border-color: #c49b63;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.container-2 {
+  height: 700px;
+  padding: 50px 30px 10px 30px;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    171deg,
+    rgb(0, 0, 0) 46%,
+    rgba(128, 128, 128, 1) 90%
+  );
+}
+.services-logo {
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+  color: #c49b63;
+  align-items: center;
+}
+.services-logo img{
+  width: 160px;
+  height: 120px;
+}
+.service-container {
+  flex-direction: row;
+  width: 100%;
+  height: 330px;
+  justify-content: space-between;
+}
+.services {
+  width: 33.33%;
+  padding: 0 30px;
+}
+.pos-rel {
+  position: relative;
+}
+.pos-abs {
+  position: absolute;
+}
+.services-hrcut {
+  width: 30%;
+  height: 320px;
+  background-image: url(./Images/haircut-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid white;
+  overflow: hidden;
+}
+.services-hrclr {
+  width: 30%;
+  height: 320px;
+  background-image: url(./Images/Hair-Color.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  overflow: hidden;
+}
+.services-facial {
+  width: 30%;
+  height: 320px;
+  background-image: url(./Images/Facial-Parlor.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  overflow: hidden;
+}
+.pos-abs{position: absolute;}
+.pos-rel{position: relative;}
+.para{
+  background-color: #c49b63;
+  text-align: center;
+  opacity:0;
+  transition:1s;
+  bottom: -100%;
+}
+.icon-pos{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-image: url(./Images/salon-icon-pos.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #c49b63;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  opacity:0;
+  transition:1s;
+}
+.services-hrcut:hover{
+  cursor: zoom-in;
+  border: 2px solid #c49b63;
+}
+.services-hrcut:hover .icon-pos{
+  opacity: 1;
+}
+.services-hrcut:hover .para {
+  opacity: 1;
+  bottom:0%;
+}
+.services-hrclr:hover{
+  cursor: zoom-in;
+  border: 2px solid #c49b63;
+}
+.services-hrclr:hover .icon-pos{
+  opacity: 1;
+}
+.services-hrclr:hover .para {
+  opacity: 1;
+  bottom:0%;
+}
+.services-facial:hover{
+  cursor: zoom-in;
+  border: 2px solid #c49b63;
+}
+.services-facial:hover .icon-pos{
+  opacity: 1;
+}
+.services-facial:hover .para {
+  opacity: 1;
+  bottom:0%;
+}
+.container-3 {
+  height: 700px;
+  padding: 80px 40px 10px 40px;
+  flex-direction: column;
+  background-color: #1f2125;
+}
+.heading {
+  flex-direction: column;
+  align-self: center;
+  color: white;
+  margin-bottom: 50px;
+}
+.heading img {
+  width: 120px;
+  height: 25px;
+}
+.contact {
+  height: 100%;
+  justify-content: space-between;
+}
+.time-info {
+  height: 450px;
+  width: 30%;
+  padding: 10px 5px;
+  flex-direction: column;
+  color: #c49b63;
+}
+.time-size{
+  font-size: 30px;
+}
+.timings {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#c-white{
+  color: whitesmoke;
+}
+.form {
+  height: 350px;
+  width: 30%;
+  flex-direction: column;
+  padding: 56px 40px 0 0;
+  justify-content: space-between;
+}
+.form input{
+  height: 40px;
+  font-size: medium;
+  background-color: #1f2125;
+  padding-left: 10px;
+  border: 1px solid whitesmoke;
+  outline: 0;
+}
+::placeholder{
+  color: #c49b63;
+}
+input:focus{
+  color: whitesmoke;
+  border: 1px solid #c49b63;
+}
+input:focus::placeholder{
+  color: whitesmoke;
+}
+.form select{
+  height: 40px;
+  width: 100%;
+  font-size: large;
+  background-color: #1f2125;
+  border: 1px solid whitesmoke;
+  outline: 0;
+  color: #c49b63;
+}
+select:focus{
+  border: 1px solid #c49b63;
+  color: whitesmoke;
+}
+.t-d{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.day{
+  width: 40%;
+}
+.day select{
+  size: 50px;
+}
+.time{
+  width: 40%;
+}
+.cont-3-bg-img{
+  height: 450px;
+  width: 20%;
+  background-image: url(./Images/scissor-contact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 110px;
+}
+.container-4{
+  height: 500px;
+  width: 100%;
+  background-image: url(./Images/bg-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offer-box{
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 80px;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background-color:rgba(0,0,0,0.8);
+  overflow: hidden;
+}
+.offer-para{
+  flex-direction: row;
+  height: 50%;
+  width: 60%;
+  align-self: center;
+}
+.offer-info{
+  width: 60%;
+  height: 100%;
+}
+.offer-info p{
+  font-size: 48px;
+  color: white;
+}
+.haircut-img-1{
+  height: 190px;
+  width: 200px;
+  border: 2px solid #c49b63;
+}
+.haircut-img-1 img{
+  height: 190px;
+  width: 200px;
+}
+.offer-img{
+  flex-direction: row;
+  height: 50%;
+  width: 62%;
+  align-self: center;
+}
+.haircut-img-2{
+  height: 200px;
+  width: 240px;
+  border: 2px solid #c49b63;
+}
+.haircut-img-2 img{
+  height: 200px;
+  width: 240px;
+}
+.offer-info-2 p{
+  font-size: 26px;
+  color: white;
+  margin-left: 40px;
+}
+.container-footer{
+  width: 100%;
+  height: 500px;
+  background-color: #545454;
+  color: white;
+  font-size: large;
+}
+.info a{
+  height: 20px;
+  text-decoration: none;
+  color: #c49b63;
+}
+.content{
+  width: 100%;
+  padding: 30px 150px 10px 150px;
+  flex-direction: column;
+}
+.footer-logo{
+  height: 31%;
+  align-self: center;
+}
+.footer-logo img{
+  width:200px;
+  height:150px;
+}
+.info{
+  height: 25%;
+  width: 70%;
+  margin-top: 50px;
+  margin-left: 152px;
+  justify-content: center;
+  font-size: 18px;
+}
+.contact-footer{
+  flex-direction: column;
+  width: 40%;
+}
+.contact-footer p{
+  margin: 5px;
+}
+.info a:hover{
+  color: lightblue;
+  transition: 0.6s;
+}
+.footer-icon{
+  width: 20%;
+  justify-content: center;
+}
+.footer-icon img{
+  width:90px;
+  height:80px;
+}
+.addy{
+  margin-left: 50px;
+  width: 35%;
+}
+.addy p{
+  margin: 5px;
+}
+.socials{
+  height: 50px;
+  width: 100%;
+  padding: 2px;
+  justify-content: space-around;
+}
+.socials-contact{
+  height: 50px;
+  width: 300px;
+  margin-right: 14px;
+}
+.social-icons{
+  height: 42px;
+  width: 60px;
+  padding-top: 6px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #c5c5c5;
+  justify-content: center;
+}
+.social-icons a{
+  text-decoration: none;
+  color: black;
+}
+.social-icons:hover{
+  animation-name: anim-footer;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  background-color: #c49b63;
+  transition: 0.2s;
+}
+.social-icons:hover a{
+  color: white;
+  transition: 0.4s;
+}
+
+/* @keyframes anim-navbar{
+  
+  50%{
+    transform: translate(1125%,0) rotate(360deg);
+  }
+  
+} */
+@keyframes anim-footer{
+  0%{
+    transform: rotate(0);
+  }
+  33%{
+    transform: rotate(360deg);
+  }
+  66%{
+    transform: rotate(-180deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
